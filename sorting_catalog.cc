@@ -120,11 +120,6 @@ void stockDB::setpq(stock a)
 	pq.push(a);
 }
 
-stock stockDB::get(int i) const
-{
-	return numStocks[i];
-}
-
 void stockDB::getpq() const
 {
 	priority_queue<stock> g = pq;
@@ -144,6 +139,12 @@ void stockDB::getList() const
 		cout << *temp << endl;
 		temp = temp->next;
 	}
+}
+
+void stockDB::showDB() const
+{
+	for (int i = 0; i < length; i++)
+		cout << numStocks[i] << endl;
 }
 
 stockDB::stockDB(int stocks)
@@ -499,8 +500,3 @@ void stockDB::radixSort()
 		countSort(numStocks, exp);
 }
 
-void stockDB::showDB() const
-{
-	for (int i = 0; i < length; i++)
-		cout << get(i) << endl;
-}
