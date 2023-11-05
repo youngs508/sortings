@@ -18,11 +18,12 @@ int main()
 	s.set(s9);
 	//stockDB a = s;
 	//cout << s2 + s3;
-	//a.selectionSort();
+	//s.bubbleSort();
+	//s.selectionSort();
 	//s.insertionSort();
 	//s.startQuickSort();
-	s.startMergeSort();
-	//s.radixSort();
+	//s.startMergeSort();
+	s.radixSort();
 	//s.shellSort();
 	//s.mergeSort(0, 7);
 	//s.heapSort();

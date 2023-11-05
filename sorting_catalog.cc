@@ -165,6 +165,20 @@ void swap(stock& a, stock& b)
 	b = temp;
 }
 
+void stockDB::bubbleSort()
+{
+	cout << "bubble sort" << endl;
+	int i, j;
+	for (i = 0; i < length - 1; i++)
+	{
+		for (j = 0; j < length - i - 1; j++)
+		{
+			if (numStocks[j+1] < numStocks[j])
+				swap(numStocks[j+1], numStocks[j]);
+		}
+	}
+}
+
 void stockDB::selectionSort()
 {
 	cout << "selection sort" << endl;

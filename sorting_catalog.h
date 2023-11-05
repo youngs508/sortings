@@ -38,6 +38,7 @@ struct stockDB {
 public:
 	stockDB(int stocks);
 	~stockDB() { delete[] numStocks; }
+	void bubbleSort();
 	void selectionSort();
 	void insertionSort();
 	void linkedInsertionSort();
