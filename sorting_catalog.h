@@ -51,7 +51,6 @@ public:
 	void set(stock a);
 	void setpq(stock a);
 	void paste(Node* a);
-	stock get(int i) const;
 	void getpq() const;
 	void getList() const;
 	void showDB() const;
